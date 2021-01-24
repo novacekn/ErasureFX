@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="222.0" prefWidth="400.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" text="WARNING" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="398.0">
+               <children>
+                  <Label fx:id="warningLabel" layoutX="56.0" layoutY="14.0" prefHeight="104.0" prefWidth="286.0" text="BY CLICKING ERASE YOU WILL BEGIN ERASING THE DRIVE. THIS IS IRREVERSIBLE" wrapText="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                  <Button layoutX="25.0" layoutY="214.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefWidth="150.0" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+                  <Button layoutX="280.0" layoutY="216.0" mnemonicParsing="false" onAction="#eraseButtonAction" prefWidth="150.0" styleClass="danger" text="Erase" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+               </children>
+            </AnchorPane>
+        </content>
+         <styleClass>
+            <String fx:value="warning" />
+            <String fx:value="titled-pane" />
+            <String fx:value="lg" />
+         </styleClass>
+      </TitledPane>
+   </children>
+</AnchorPane>
